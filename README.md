@@ -1,0 +1,1 @@
+iBomma has a huge selection of Telugu films, from the latest releases to older, hard-to-find classics. It covers a wide range of genres, so whether you're in the mood for action, drama, romance, or comedy, there's always something available.
