@@ -1,0 +1,101 @@
+body{
+    background: black;
+    font-family: 'sans serif';
+}
+header{
+    background: #151515;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 25px;
+
+}
+header img{
+    width: 150px;
+    height: 100px;
+}
+header div:nth-child(2){
+    background: yellow;
+    height: 25px;
+    padding: 0 15px;
+    border-radius: 12px;
+    margin: 30px;
+}
+header input{
+    border: 0;
+    outline: 0;
+    background: #000;
+    color: white;
+    height: 100%;
+    font-size: 100%;
+    padding: 0 5px;
+}
+article{
+    text-align: center;
+    margin-bottom: 50px;
+}
+article p:first-child{
+    color: #fff;
+    font-size: 250%;
+    font-family: 'Arial Unicode MS';
+}
+article p:last-child{
+    color: #ddd;
+    font-size: 125%;  
+}
+.grid-box{
+    display: grid;  /* 16rX1c */
+    /*grid-template-columns: 200px 400px; or 20% 30%; to specificy the number columns */
+    /* grid-template-columns: auto auto auto auto;
+    ///some device it not show properly ex:phone/ */
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));/
+    grid-template-rows:auto auto ;
+    /*column-gap: 20px;
+    row-gap: 15px;*/
+    /* grid-gap: 30px 0px;/both row and columns gap we used grid gap/ */
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+
+}
+/*
+.grid-box section{
+    background: cyan;
+}
+*/
+.grid-box img{
+    width: 95%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+.grid-box a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 110%;
+
+}
+.grid-box:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+.grid-box section dov:last-child{
+    color: #ccffff;
+    font-weight: bold;
+
+}
+/*.grid-box section :not(:hover){
+    filter: blur(5px);  //blur that picture when point comes on that  */
+   
+}
+.grid-box :hover > section :not(:hover){
+    filter: blur(5px);
+}
+footer{
+    background: #151515;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    margin: 50px 0px;
+    color: #ddd;
+}
